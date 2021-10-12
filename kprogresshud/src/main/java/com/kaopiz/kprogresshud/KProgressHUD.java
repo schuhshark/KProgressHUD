@@ -278,6 +278,18 @@ public class KProgressHUD {
     }
 
     /**
+     * Specify a callback to run when dialog is dismissed
+     *
+     * @param listener The code that will run when the dialog is dismissed
+     *
+     * @return Current HUD
+     */
+    public KProgressHUD setDismissListener(DialogInterface.OnDismissListener listener) {
+        mProgressDialog.setOnDismissListener(listener);
+        return this;
+    }
+
+    /**
      * Specify whether this HUD closes itself if progress reaches max. Default is true.
      * @return Current HUD
      */
