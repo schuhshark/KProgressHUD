@@ -199,6 +199,14 @@ public class KProgressHUD {
     }
 
     /**
+     * Get current label text
+     * @return Current label text
+     */
+    public String getLabel() {
+        return mProgressDialog.mLabel;
+    }
+
+    /**
      * Optional detail description to be displayed on the HUD
      * @return Current HUD
      */
@@ -214,6 +222,14 @@ public class KProgressHUD {
     public KProgressHUD setDetailsLabel(String detailsLabel, int color) {
         mProgressDialog.setDetailsLabel(detailsLabel, color);
         return this;
+    }
+
+    /**
+     * Get current detail label text
+     * @return Current detail label text
+     */
+    public String getDetailsLabel() {
+        return mProgressDialog.mDetailsLabel;
     }
 
     /**
